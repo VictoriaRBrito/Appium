@@ -21,3 +21,21 @@ Para verificar se a instalação das ferramentas necessárias para o Appium fora
 ```bash
 $ npx appium-doctor
 ```
+
+<h1><img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_maven_icon_130397.png" alt = "logo Maven" width = "45">Java Client através do Maven</h1>
+  Basta você inserir a seguinte dependência no arquivo pom.xml do seu projeto:
+
+  ```
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>7.6.0</version>
+</dependency>
+
+```
+  Depois no diretório do projeto abra o terminal e digite o seguinte comando:
+  ```
+mvn clean install
+```
+
+
