@@ -1,4 +1,4 @@
-# Appium
+# <img src="https://cdn.worldvectorlogo.com/logos/appium.svg" alt = "logo Appium" width = "30"> Appium
 Trabalho desenvolvido sobre a ferramenta Appium.
 <h1> :speech_balloon: O que é o Appium? </h1>
 Appium é uma ferramenta de código aberto usada para automatização de aplicativos da web para celular, nativos e híbridos  em sistemas como iOS, Android e Windows desktop. 
@@ -15,7 +15,36 @@ Ele valida a compatibilidade, usabilidade e tempo de resposta dos navegadores e 
 - [Appium Server](https://appium.io)
 - [Appium Client](https://appium.io/docs/en/about-appium/getting-started/?lang=pt#appium-clients)
 - [Selenium Jar](https://www.selenium.dev/downloads/)
-### Verifique se a instalação está correta:
+
+## :computer: Configurando as variáveis ambiente
+  É necessário configurar as variáveis ambiente no Windows, para isso digite os comandos a seguir no terminal
+  
+  Para o JAVA_HOME (x é a versão da sua JDK):
+```bash
+$ set JAVA_HOME "C:\Program Files\Java\jdk-xx.x.x"
+```
+  Colocando JAVA_HOME na PATH:
+```bash
+$ set PATH=%PATH%;C:\Program Files\Java\jdk-xx.x.x\bin
+```
+  Adicionando a variável ANDROID_HOME:
+  ```bash
+$ set ANDROID_HOME "C:\<pasta da instalação>\android-sdk-windows"
+```
+  Colocando ANDROID_HOME na PATH:
+```bash
+$ set PATH=%PATH%;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools
+```
+  Adicionando a variável MAVEN_HOME:
+  ```bash
+$ set MAVEN_HOME "C:\<pasta da instalação>\apache-maven-x.x.x"
+```
+  Colocando MAVEN_HOME na PATH:
+```bash
+$ set PATH=%PATH%;%MAVEN_HOME%\bin
+```
+
+### Verifique se as instalações estão corretas:
 Para verificar se a instalação das ferramentas necessárias para o Appium foram feitas corretamente, abra o terminal e digite este comando:
   
 ```bash
@@ -37,5 +66,10 @@ $ npx appium-doctor
   ```
 mvn clean install
 ```
-
+<h1><img src="https://cdn.worldvectorlogo.com/logos/appium.svg" alt = "logo Appium" width = "30"> Executando o Appium</h1>
+  Digite o seguinte comando no seu terminal:
+  
+```bash
+$ appium
+```
 
